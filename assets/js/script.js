@@ -148,3 +148,13 @@ $(document).ready(function(){
         $(this).siblings('.accordion-button').removeClass('active');
     });
 });
+
+document.querySelector(".play_buttin_wrapper").addEventListener("click", () => {
+    document.querySelector(".modal_video_wrapper").classList.add("show");
+    document.querySelector(".modal_video_wrapper video").play();
+});
+
+document.querySelector(".close_icon").addEventListener("click", () => {
+  document.querySelector(".modal_video_wrapper").classList.remove("show");
+  document.querySelector(".modal_video_wrapper video").pause();
+});

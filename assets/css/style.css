@@ -133,8 +133,44 @@ body {
 }
 
 img,
-svg {
+svg,
+video {
     width: 100%;
+}
+
+.modal_video_wrapper {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .90);
+    z-index: 999;
+    transform: translateY(-200%);
+    transition: transform .3s ease-in-out;
+}
+
+.modal_video_wrapper .close_icon {
+    max-width: 30px;
+    position: fixed;
+    right: 30px;
+    top: 50px;
+    z-index: 9999;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.modal_video_wrapper.show {
+    transform: translateY(0);
+}
+
+.modal_video_wrapper .video_wrapper {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.modal_video_wrapper .video_wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .banner-section {
@@ -733,6 +769,9 @@ div.ball .text {
 .play_buttin_wrapper{
     display: flex;
     gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
     align-items: center;
 }
 
