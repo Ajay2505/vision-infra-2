@@ -498,6 +498,11 @@ div.ball .text {
     height: 100%;
 }
 
+.video_section {
+    background-color: var(--inverse-background-colour);
+    padding-top: 100px;
+}
+
 .section_2 {
     background-color: var(--inverse-background-colour);
     padding-block: 100px;
