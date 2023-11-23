@@ -214,7 +214,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-inline-start: 20px;
+    background-color: #192A3F;
     border-bottom: 1px solid var(--line-colour);
+}
+
+.navIcon {
+    padding-inline: 40px;
+    display: none;
 }
 
 .nav-options {
@@ -479,6 +485,7 @@ div.ball .text {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
     flex-grow: 1;
 }
 
@@ -512,6 +519,8 @@ div.ball .text {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .arrow-wrapper {
@@ -561,7 +570,7 @@ div.ball .text {
     font-family: var(--heading-font-family);
     font-weight: lighter;
     color: var(--heading-colour);
-    font-size: 55px;
+    font-size: clamp(30px, 5vw, 55px);
     line-height: 1;
     margin-bottom: 0px;
     transform: translateY(15px);
@@ -1291,7 +1300,7 @@ nav.sticky-bar .logo-wrapper-sticky img{
     display: flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
+    text-wrap: wrap;
 }
 
 .heading_wrapper h1.bordered_title.dark {
@@ -1313,4 +1322,14 @@ nav.sticky-bar .logo-wrapper-sticky img{
 
 .z-6 {
     z-index: 6;
+}
+
+.main_section {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-color: var(--background-colour);
+}
+
+.main_section .img_wrapper {
+    margin-block: 50px;
 }

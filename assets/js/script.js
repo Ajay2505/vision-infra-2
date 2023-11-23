@@ -1,7 +1,9 @@
 const nav = document.querySelector('.normal-nav');
 const navOptions = document.querySelector('.nav-options');
 
-navOptions.style.height = `${nav.offsetHeight}px`;
+if (navOptions) {
+  navOptions.style.height = `${nav.offsetHeight}px`;
+}
 
 class HoverButton {
     constructor(el) {
@@ -72,7 +74,9 @@ class HoverButton {
 }
 
 const btn1 = document.querySelector('.ball');
-new HoverButton(btn1);
+if (btn1) {
+  new HoverButton(btn1);
+}
 
 
 // Get references to all the card bottoms and points wrappers
