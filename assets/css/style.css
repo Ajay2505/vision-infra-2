@@ -1579,3 +1579,22 @@ nav.sticky-bar .logo-wrapper-sticky img {
     /* background-color: var(--inverse-background-colour); */
     /* background-color: var(--heading-colour); */
 }
+
+.transform-none {
+    transform: none !important;
+}
+
+.form_wrapper select {
+    border: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+}
+
+.gold_color {
+    color: var(--heading-colour);
+}
+
+.bg_color {
+    color: var(--background-colour);
+}
