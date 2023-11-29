@@ -1598,3 +1598,7 @@ nav.sticky-bar .logo-wrapper-sticky img {
 .bg_color {
     color: var(--background-colour);
 }
+
+.w-full {
+    width: 100%;
+}
