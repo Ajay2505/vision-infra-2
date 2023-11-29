@@ -1570,3 +1570,12 @@ nav.sticky-bar .logo-wrapper-sticky img {
 .hover-color-inherit:hover {
     color: inherit;
 }
+
+.max-w-30 {
+    max-width: 30px;
+}
+
+.normal-nav.gold {
+    /* background-color: var(--inverse-background-colour); */
+    /* background-color: var(--heading-colour); */
+}

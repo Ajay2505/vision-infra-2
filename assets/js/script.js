@@ -153,7 +153,7 @@ $(document).ready(function(){
     });
 });
 
-document.querySelector(".play_buttin_wrapper").addEventListener("click", () => {
+document.querySelector(".play_buttin_wrapper")?.addEventListener("click", () => {
     document.querySelector(".modal_video_wrapper").classList.add("show");
     document.querySelector(".modal_video_wrapper video").play();
 });
