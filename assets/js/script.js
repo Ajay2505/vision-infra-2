@@ -162,3 +162,20 @@ document.querySelector(".close_icon").addEventListener("click", () => {
   document.querySelector(".modal_video_wrapper").classList.remove("show");
   document.querySelector(".modal_video_wrapper video").pause();
 });
+
+const navIcon = document.querySelectorAll(".navIcon");
+if (navIcon) {
+  navIcon.forEach(icon => {
+    icon.addEventListener("click", evt => {
+      document.body.classList.toggle("overflow-hidden");
+      evt.currentTarget.classList.toggle("active");
+      if (evt.currentTarget.classList.contains("gold")) {
+        document.getElementById("mobileNav").classList.add("gold");        
+      } else {
+        document.getElementById("mobileNav").classList.remove("gold");        
+      }
+      document.getElementById("mobileNav").classList.toggle("active");
+    });
+  });
+}
+
