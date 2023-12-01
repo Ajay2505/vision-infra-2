@@ -1300,6 +1300,14 @@ nav.sticky-bar .logo-wrapper-sticky img {
     color: var(--background-colour);
 }
 
+.mobile_nav ul li .dropdown svg {
+    color: var(--heading-colour);
+}
+
+.mobile_nav.gold ul li .dropdown svg {
+    color: var(--background-colour);
+}
+
 .mobile_nav ul li .dropdown p {
     color: var(--heading-colour);
     font-weight: 600;
@@ -1449,7 +1457,7 @@ nav.sticky-bar .logo-wrapper-sticky img {
 }
 
 .hstack.gap-x-20 {
-    gap: 0 17%;
+    gap: 10px 15px;
 }
 
 .hstack.gap-x-10 {

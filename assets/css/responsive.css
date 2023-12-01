@@ -36,6 +36,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .banner-heading::before {
+        content: none;
+    }
     .banner-text>p {
         padding-inline: 20px;
     }
